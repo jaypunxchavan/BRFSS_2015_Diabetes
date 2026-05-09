@@ -6,7 +6,7 @@ This repository contains a notebook-based analysis of diabetes risk using the 20
 Diabetes affects 537 million people globally; nearly half remain undiagnosed, with access barriers concentrated among low-income populations. Most machine learning screening models require clinical measurements unavailable to underserved groups, and the role of socioeconomic factors in risk remains poorly characterized.
 
 ## Introduction
-Diabetes affects 537 million people globally; nearly half remain undiagnosed, with access barriers concentrated among low-income populations. Most machine learning screening models require clinical measurements unavailable to underserved groups, and the role of socioeconomic factors in risk remains poorly characterized.
+BRFSS provides a large, questionnaire-based view of diabetes risk in the United States. This project evaluates whether non-clinical survey features can support screening models, and examines how socioeconomic factors (particularly income) relate to predictive performance and disparities.
 
 ## Methods
 In this cross-sectional secondary analysis, I analyzed 249,049 BRFSS 2015 participants (binary diabetic outcome; pre-diabetics excluded by data curator) using four ML algorithms (logistic regression, decision tree, random forest, and XGBoost), a no-clinical-test reduced model, cross-algorithm permutation importance, targeted interaction terms, and LASSO-penalized interaction search. The no-clinical-test model underwent cross-year temporal replication (BRFSS 2020; n = 275,483).
