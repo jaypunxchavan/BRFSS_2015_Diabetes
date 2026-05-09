@@ -19,7 +19,7 @@ On the de-duplicated primary dataset (n = 225,152; 23,897 duplicate records remo
 
 ## Data
 - `diabetes_binary_health_indicators_BRFSS2015.csv`: curated BRFSS 2015 dataset used for the primary analysis (located in repo). 
-- `LLCP2020.XPT`: BRFSS 2020 raw data file used for external validation (located on the [CDC wesbite](https://www.cdc.gov/brfss/annual_data/2020/files/LLCP2020XPT.zip) .
+- `LLCP2020.XPT`: BRFSS 2020 raw data file used for external validation (located on the [CDC wesbite](https://www.cdc.gov/brfss/annual_data/2020/files/LLCP2020XPT.zip)).
 ## Usage
 1. Create a Python environment with typical data-science dependencies (pandas, numpy, scikit-learn, xgboost, matplotlib, seaborn).
 2. Place the data files in the repository root (or update the paths in `analysis.ipynb`).
