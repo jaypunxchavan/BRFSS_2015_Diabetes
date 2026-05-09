@@ -4,15 +4,15 @@ This repository contains a notebook-based analysis of diabetes risk using the 20
 
 ## Manuscript Contents
 
-**Introduction.** Diabetes affects 537 million people globally; nearly half remain undiagnosed, with access barriers concentrated among low-income populations. Most machine learning screening models require clinical measurements unavailable to underserved groups, and the role of socioeconomic factors in risk remains poorly characterized.
-**Methods.** In this cross-sectional secondary analysis, I analyzed 249,049 BRFSS 2015 participants (binary diabetic outcome; pre-diabetics excluded by data curator) using four ML algorithms, a no-clinical-test reduced model, cross-algorithm permutation importance, targeted interaction terms, and LASSO-penalized interaction search. The no-clinical-test model underwent cross-year temporal replication (BRFSS 2020; n = 275,483).
-**Results**
+## **Introduction.** Diabetes affects 537 million people globally; nearly half remain undiagnosed, with access barriers concentrated among low-income populations. Most machine learning screening models require clinical measurements unavailable to underserved groups, and the role of socioeconomic factors in risk remains poorly characterized.
+## **Methods.** In this cross-sectional secondary analysis, I analyzed 249,049 BRFSS 2015 participants (binary diabetic outcome; pre-diabetics excluded by data curator) using four ML algorithms, a no-clinical-test reduced model, cross-algorithm permutation importance, targeted interaction terms, and LASSO-penalized interaction search. The no-clinical-test model underwent cross-year temporal replication (BRFSS 2020; n = 275,483).
+## **Results**
 On the de-duplicated primary dataset (n = 225,152; 23,897 duplicate records removed to eliminate fold contamination):
 - Model performance: full model ROC-AUC 0.814 (CV: 0.812); no-clinical-test model AUC 0.789 (sensitivity 75.0%, specificity 68.8%); cross-year replication AUC 0.806.
 - Income importance: income ranked 7th–21st across algorithms using unified permutation importance; interaction modeling showed conditional associations (AUC 0.831–0.836).
 - Prevalence gradient: diabetes prevalence declined 3.3-fold across income brackets; the lowest-income 32.7% of the sample accounted for 49.8% of cases.
 - Fairness audit: a 37-percentage-point sensitivity range across income subgroups (equalized odds difference = 0.128); race and ethnicity data were unavailable, so the income gradient should be interpreted cautiously. 
-**Conclusion.** Questionnaire-based screening achieves meaningful discrimination without clinical measurements, but a fixed threshold produces severe disparate performance across income subgroups. Population-specific recalibration and prospective external validation are required before deployment.
+## **Conclusion.** Questionnaire-based screening achieves meaningful discrimination without clinical measurements, but a fixed threshold produces severe disparate performance across income subgroups. Population-specific recalibration and prospective external validation are required before deployment.
 
 ## Repository contents
 - `analysis.ipynb`: main analysis notebook.
